@@ -4,7 +4,7 @@ import { Row, Col } from 'reactstrap';
 import { Redirect } from 'react-router-dom';
 import { withRouter } from 'react-router';
 
-import { TitleText } from './styles';
+import { TitleText } from '../styles';
 import WhiteChip from '../components/WhiteChip';
 
 const SummaryRow = styled(Row)`

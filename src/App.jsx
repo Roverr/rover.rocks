@@ -16,8 +16,21 @@ const BottomMarginDiv = styled.div`
 `;
 
 export default class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.pages = new Pages();
+    }
+    getArticleRoutes() {
+        return this.pages.articles.map((current, i) => {
+            const meta = current.meta;
+            return <Route
+                        key={i}
+                        path={"/articles/" + current.path}
+                        render={() => <current.component title={meta.title} date={meta.date}/>}
+                    />;
+        });
+    }
     render() {
-        const pages = new Pages();
         return (
             <ContainerNice>
                 <Row>
@@ -28,9 +41,9 @@ export default class App extends React.Component {
                                     <Header/>
                                 </BottomMarginDiv>
                                 <Route exact path="/" render={() => {
-                                    return <Home pages={pages}/>
+                                    return <Home pages={this.pages}/>
                                 }}/>
-                                <Route path="/articles/golang-debug" component={godeContent}/>
+                                {this.getArticleRoutes()}
                             </div>
                         </Router>
                     </ColNice>
