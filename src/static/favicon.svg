@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Component 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1027 -391)">
+<g id="Component 2">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-1027 391)" fill="#4DAADB"/>
+</g>
+<g id="R">
+<use xlink:href="#path1_fill" transform="translate(-984 450)"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 200 0L 200 200L 0 200L 0 0Z"/>
+<path id="path1_fill" d="M 18.0379 68.368L 29.2699 68.368L 29.2699 2.56L 18.0379 2.56L 18.0379 -5.072L 60.6619 -5.072C 69.3019 -5.072 76.0219 -3.248 80.8219 0.4C 85.7179 3.952 88.1659 9.184 88.1659 16.096C 88.1659 28.384 81.2059 35.584 67.2859 37.696L 85.8619 68.368L 97.8139 68.368L 97.8139 76L 77.7979 76L 56.0539 38.848L 46.1179 38.848L 46.1179 30.928L 58.7899 30.928C 65.2219 30.928 69.7819 29.536 72.4699 26.752C 75.1579 23.872 76.5019 20.368 76.5019 16.24C 76.5019 12.208 75.1579 8.944 72.4699 6.448C 69.8779 3.856 65.9899 2.56 60.8059 2.56L 41.0779 2.56L 41.0779 68.368L 52.3099 68.368L 52.3099 76L 18.0379 76L 18.0379 68.368Z"/>
+</defs>
+</svg>

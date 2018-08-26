@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Rover's blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rover",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.9.7"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.5.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-favicon": "0.0.14",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.3.1",
+    "react-social-media-icons": "^1.0.3",
+    "reactstrap": "^6.3.1",
+    "styled-components": "^3.4.2"
+  }
+}
