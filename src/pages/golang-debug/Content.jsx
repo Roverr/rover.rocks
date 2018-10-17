@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
+import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image';
 
 import { ImageCol, HeadTextMerri } from '../../styles';
 import { JustifiedRow } from '../styles';
@@ -24,7 +23,9 @@ export class Content extends React.Component{
                     </p>
                 </JustifiedRow>
                 <Row>
-                        <img src={swaggy}/>
+                    <ImageCol>
+                        <img src={swaggy} className="rounded mx-auto d-block"/>
+                    </ImageCol>
                 </Row>
                 <JustifiedRow>
                     <p>The language utilizes automated garbage collection,

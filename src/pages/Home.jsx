@@ -3,7 +3,7 @@ import _ from 'lodash';
 import { Row } from 'reactstrap';
 
 import Title from './Title';
-import { TitleText, CoolRow, FilterTagRow } from './styles';
+import {  CoolRow, FilterTagRow } from './styles';
 import WhiteChip from '../components/WhiteChip';
 
 
@@ -44,11 +44,11 @@ export default class Home extends React.Component{
     }
     tagFilter() {
         if (this.state.active.length === this.props.pages.articles.length) {
-            return (null);
+            return [];
         }
         return [
             <CoolRow key="row-0">
-                <TitleText> Applied filters: </TitleText>
+                <h1> Applied filters: </h1>
             </CoolRow>,
             <FilterTagRow key="row-1">
                 <WhiteChip tag={this.state.tag} onDelete={this.resetTags.bind(this)}/>
@@ -59,6 +59,6 @@ export default class Home extends React.Component{
         if (!this.props.pages || !this.props.pages.articles) {
             return null;
         }
-        return [this.tagFilter()].concat(this.getPosts())
+        return this.tagFilter().concat(this.getPosts())
     }
 }
